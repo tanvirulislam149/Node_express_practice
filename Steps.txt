@@ -1,0 +1,9 @@
+Making Node express backend project
+1. npm init
+2. make .gitignore and add node_modules, .env in it 
+3. install express and nodemon (for quick reload)
+4. write in scripts of package.json => start: node server.js, dev: nodemon server.js and start the server by npm run dev. It will start by nodemon and will reload instantly.
+5. install dotenv to use env file and define PORT in env file and use it in server.js with || 5000
+6. send response like this ===>>> res.status(200).json({message: "something"})
+7. make folder for every perticular route and write app.use() in server.js. Check docs
+8. 
