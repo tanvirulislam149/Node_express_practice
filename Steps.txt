@@ -6,4 +6,5 @@ Making Node express backend project
 5. install dotenv to use env file and define PORT in env file and use it in server.js with || 5000
 6. send response like this ===>>> res.status(200).json({message: "something"})
 7. make folder for every perticular route and write app.use() in server.js. Check docs
-8. 
+8. use router.route for different methods of same route in routes file. 
+9. make controller(Just an arrow function) folder and file to keep the business logic

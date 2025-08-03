@@ -1,17 +1,12 @@
 const express = require("express");
 const router = express.Router();
+const { getContact, postContact } = require("../controllers/contactController");
 
-router.use((req, res, next) => {
-  console.log("Time: ", Date.now());
-  next();
-});
+// router.use((req, res, next) => {
+//   console.log("Time: ", Date.now());
+//   next();
+// });
 
-router.get("/", (req, res) => {
-  res.send("checking routes");
-});
-
-router.get("/check", (req, res) => {
-  res.send("checking check");
-});
+router.route("/").get(getContact).post(postContact);
 
 module.exports = router;
