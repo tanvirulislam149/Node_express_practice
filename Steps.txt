@@ -8,3 +8,6 @@ Making Node express backend project
 7. make folder for every perticular route and write app.use() in server.js. Check docs
 8. use router.route for different methods of same route in routes file. 
 9. make controller(Just an arrow function) folder and file to keep the business logic
+10. To get data from frontend, write ==>>  app.use(express.json()) in server.js file 
+11. req.body >> gets all the data from frontend
+12. create a middleware folder and write middleware functions in it and use them in server.js by app.use(middlewareName). It will be called in every request in next() is called. 
