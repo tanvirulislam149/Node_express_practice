@@ -11,3 +11,6 @@ Making Node express backend project
 10. To get data from frontend, write ==>>  app.use(express.json()) in server.js file 
 11. req.body >> gets all the data from frontend
 12. create a middleware folder and write middleware functions in it and use them in server.js by app.use(middlewareName). It will be called in every request in next() is called. 
+13. Middleware is used to handle errors. Write a middleware, check res.statusCode then res.json({})
+14. Use mongoose to make model and schema. 
+15. use express-async-handler for error handling and make a middleware handling all the errors in one file
